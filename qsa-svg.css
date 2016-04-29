@@ -1,0 +1,138 @@
+/*  ===========================
+    The following style rules 
+    pertain to the external svg 
+    Quasonama-Tekton-logo-01.svg"
+    and are linked to inside
+    the svg document itself 
+    using an xml-stylesheet pi
+    =========================== */
+/* moved back to internal style element of svg doc itself */
+/*  ===========================
+    The following style rules 
+    pertain to the inline svg 
+    in index.html with the 
+    id="Quasonama-diagram-master"
+    =========================== */
+
+.arcs,
+.speaker-positions,
+.mic-positions,
+.listener-egocentre {
+    visibility: hidden;
+}
+
+.label {
+    /* all .label class text is white … */
+    
+    fill: #fff;
+}
+
+.arc-angle,
+.egocentre {
+    /* except these classes in black, which override .label by being after .label */
+    
+    fill: #000;
+}
+/* things that are related to audio left or right are either blue or red, and have a class of left or right */
+
+.left {
+    /* left is blue-ish */
+    
+    fill: hsl(220, 100%, 50%);
+}
+
+.right {
+    /* right is red-ish */
+    
+    fill: hsl(15, 100%, 50%);
+}
+
+.leftsegment {
+    /* left segment is lighter blue-ish */
+    
+    fill: hsl(220, 100%, 72%);
+}
+
+.rightsegment {
+    /* right segment is lighter red-ish */
+    
+    fill: hsl(15, 100%, 72%);
+}
+
+.left-arc,
+.right-arc {
+    /* the arcs have thick lines */
+    
+    fill: none;
+    stroke-width: 3;
+}
+
+.left-arc {
+    /* same colours as left and right classes, but these are strokes */
+    
+    stroke: hsl(220, 100%, 50%);
+}
+
+.right-arc {
+    stroke: hsl(15, 100%, 50%);
+}
+
+.left-outboard,
+.left-inboard,
+.right-inboard,
+.right-outboard,
+#left-hemipan-segment,
+#right-hemipan-segment {
+    /* these classes have basic black default stroke */
+    
+    stroke: #000;
+}
+
+#left-hemipan-segment,
+#right-hemipan-segment {
+    /* the segments have quite a thick line around */
+    
+    stroke-width: 4;
+}
+
+.segment {
+    /* for jquery to hide or show */
+}
+
+#egocentre-arrow {
+    /* this arrow is green and represents your head position */
+    
+    fill: none;
+    stroke: black;
+}
+
+.label {
+    /* all text in this quite nice font, similar dimensions to the original Helv Neue bold cond */
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+/* different label classes have different font sizes */
+
+.egocentre,
+.microphone,
+.speaker,
+.microphoneangle {
+    font-size: 18px;
+}
+
+.arc-angle,
+.speakerangle {
+    font-size: 24px;
+}
+
+.speaker-stereoimage {
+    font-size: 16px;
+}
+
+.speaker-stereoimage-angle {
+    font-size: 54px;
+}
+
+.mic-stereoimage-angle {
+    font-size: 28px;
+}
