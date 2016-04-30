@@ -9,17 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="qsa-main.css">
-    <link rel="stylesheet" href="qsa-style.css">
-    <link rel="stylesheet" href="qsa-svg.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" href="css/qsa-main.css">
+    <link rel="stylesheet" href="css/qsa-style.css">
+    <link rel="stylesheet" href="css/qsa-svg.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Aguafina+Script' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
     <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using a <strong>crap</strong> browser. FFS, <a href="http://browsehappy.com/">sort it out</a>.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="header-container">
         <header class="wrapper clearfix">
@@ -249,7 +250,7 @@
                                     </g>
                                 </g>
                             </g>
-                            <image src="fallback-diagram.gif" xlink:href="">
+                            <image src="img/fallback-diagram.gif" xlink:href="">
                         </svg>
                         <!--
                         <canvas id="video-head-overlay"></canvas>
@@ -272,13 +273,13 @@
                     </figure>
                 </header>
                 <section id="section0" class="apparent">
-                    <h2>We don&rsquo;t need surround sound</h2>
-                    <p>There is little point in full 360&deg; &ldquo;surround sound&rdquo;. If I heard a sudden sound behind me I&rsquo;d turn around to see what it is, thus ignoring the screen! Besides, few rooms are arranged for &ldquo;surround&rdquo; &mdash; seating is often against a wall, leaving no rearward distance required by most &ldquo;surround sound&rdquo; schemes.</p>
+                    <h2>We don’t need surround sound</h2>
+                    <p>There is little point in full 360&deg; &ldquo;surround sound&rdquo;. If I heard a sudden sound behind me I’d turn around to see what it is, thus ignoring the screen! Besides, few rooms are arranged for &ldquo;surround&rdquo; &mdash; seating is often against a wall, leaving no rearward distance required by most &ldquo;surround sound&rdquo; schemes.</p>
                     <p>We have two ears, but that does not mean spatially realistic sound only needs two channels. A sonic partial panorama that &ldquo;wraps around&rdquo; the forward focus of attention can be more effective. Two-speaker stereo is often more deficient than assumed, while headphones can sound too separate. In real life, natural crosstalk is an important part of sonic identity.</p>
                 </section>
                 <section id="section1" class="obscured">
                     <h2>Quasonama is panoramic sound</h2>
-                    <p>The aim of Quasonama is to portray a 240&deg; partial-panoramic soundfield. This is two thirds of a circle. The left side is represented by a 120&deg; arc, the right side by another 120&deg; arc. The remaining 120&deg; arc behind the listener is left to &ldquo;phantom&rdquo; interpretation as precise positioning there is relatively unimportant. There will be ample rearward coverage from both left and right arcs to create the impression of &ldquo;behind&rdquo;. Although the arcs are depicted as 120&deg;, of course the coverage is far wider &mdash; greater than a hemisphere. When you stand adjacent to a speaker, of course you still hear it adequately! </p>
+                    <p>The aim of Quasonama is to portray a 240° partial-panoramic soundfield. This is two thirds of a circle. The left side is represented by a 120° arc, the right side by another 120&deg; arc. The remaining 120° arc behind the listener is left to &ldquo;phantom&rdquo; interpretation as precise positioning there is relatively unimportant. There will be ample rearward coverage from both left and right arcs to create the impression of &ldquo;behind&rdquo;. Although the arcs are depicted as 120&deg;, of course the coverage is far wider &mdash; greater than a hemisphere. When you stand adjacent to a speaker, of course you still hear it adequately! </p>
                 </section>
                 <section id="section2" class="obscured">
                     <h2>Virtual reality audio</h2>
@@ -311,14 +312,14 @@
                 </section>
             </article>
             <aside>
-                <object type="image/svg+xml" data="Quasonama-Tekton-logo-01.svg" class="logo">
-                    <img src="fallback-logo.gif" alt="Quasonama logo">
+                <object type="image/svg+xml" data="img/Quasonama-Tekton-logo-01.svg" class="logo">
+                    <img src="img/fallback-logo.gif" alt="Quasonama logo">
                     <!-- fallback image in CSS -->
                 </object>
                 <h1>Qua so <em>what?</em></h1>
                 <p>The name? Three letters each from <em>Quad</em> or <em>Quartet</em>; <em>Sonic</em> or <em>sound</em>; <em>Panorama</em> or <em>diorama</em>. The idea? A sensible implementation of immersive sound.</p>
                 <ol id="tocmenu"></ol>
-                <p>Quasonama is not a technology, not a product, and not even anything I can sell or make money out of. It is just a good idea and an exhortation to the world to help promote, develop and believe in this idea with me.</p>
+                <p>Quasonama is not a technology, not a product, and not even anything I can sell or make money out of. It’s just a good idea and an exhortation to the world to help promote, develop and believe in this idea with me.</p>
             </aside>
 
         </div>
@@ -328,13 +329,20 @@
 
     <div class="footer-container">
         <footer class="wrapper">
-            <p>Quasonama is an idea by <strong>Ian Tindale</strong>, and Nured is a startup for educational audio development and multimedia production. The names &ldquo;Nured&rdquo; and &ldquo;Quasonama&rdquo; were thought up by Ian Tindale between 2014 and 2016. Ian Tindale is <em>u0421793</em> on twitter. On Youtube, one can experience the <a href="https://www.youtube.com/channel/UCJOuI-LbKNs5SDxjhJjHxZg" style="color: white;">Nured channel</a>.</p>
-            <p>This web page design is written, drawn, coded in HTML5 CSS3 and SVG by Ian Tindale &copy; 2016</p>
+            <object type="image/svg+xml" id="nured-logotype-svg" data="img/nuredlogo.svg" width="25%" class="logo">
+                <h1 class="title">Nured</h1>
+            </object>
+            <p>Quasonama is an idea by <strong>Ian Tindale</strong>, and <a href="http://nured.info" style="color: white;">Nured</a> is a startup for educational audio development and multimedia production. The names &ldquo;Nured&rdquo; and &ldquo;Quasonama&rdquo; were thought up by Ian Tindale between 2014 and 2016. Ian Tindale is <em>u0421793</em> on twitter. On Youtube, one can experience the <a href="https://www.youtube.com/channel/UCJOuI-LbKNs5SDxjhJjHxZg" style="color: white;">Nured channel</a>.</p>
+            <p>This website is written, drawn, coded in HTML5 CSS3 and SVG by Ian Tindale © 2016</p>
         </footer>
     </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
-    <script src="qsa-main.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-2.2.3.min.js"><\/script>')
+    </script>
+
+    <script src="js/qsa-main.js"></script>
 </body>
 
 </html>
