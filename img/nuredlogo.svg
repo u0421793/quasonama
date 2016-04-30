@@ -1,0 +1,149 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="480px" height="180px" style="enable-background:new 0 0 480px 180px;" class="col-md-6" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
+            <style type="text/css">
+                <![CDATA[
+                /* set the paths that form the letters/surround in <symbol>s */
+                
+                .letters,
+                .surround {
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                }
+                /* thickness of layered paths, in <use><g>s, this order */
+                
+                .inline {
+                    stroke-width: 20;
+                }
+                
+                .gap {
+                    stroke-width: 35;
+                }
+                
+                .outline {
+                    stroke-width: 60;
+                }
+                
+                .surround {
+                    stroke-width: 40;
+                }
+                /* sets of keyframe and animation class definitions for colour drifting */
+                
+                @keyframes colourdrifty-A {
+                    0%, 100% {
+                        stroke: Navy;
+                    }
+                    33%, 66% {
+                        stroke: Navy;
+                    }
+                    50% {
+                        stroke: SteelBlue;
+                    }
+                }
+                
+                .colourdrifty-A {
+                    animation: colourdrifty-A 9s linear infinite;
+                }
+                
+                @keyframes colourdrifty-B {
+                    0%, 100% {
+                        stroke: Red;
+                    }
+                    33%, 66% {
+                        stroke: Red;
+                    }
+                    50% {
+                        stroke: FireBrick;
+                    }
+                }
+                
+                .colourdrifty-B {
+                    animation: colourdrifty-B 10s linear infinite;
+                }
+                
+                @keyframes colourdrifty-C {
+                    0%, 100% {
+                        stroke: LimeGreen;
+                    }
+                    33%, 66% {
+                        stroke: LimeGreen;
+                    }
+                    50% {
+                        stroke: OliveDrab;
+                    }
+                }
+                
+                .colourdrifty-C {
+                    animation: colourdrifty-C 11s linear infinite;
+                }
+                
+                @keyframes colourdrifty-D {
+                    0%, 100% {
+                        stroke: Black;
+                    }
+                    33%, 66% {
+                        stroke: Black;
+                    }
+                    50% {
+                        stroke: LightSlateGray;
+                    }
+                }
+                
+                .colourdrifty-D {
+                    animation: colourdrifty-D 12s linear infinite;
+                }
+                
+                ]]>
+            </style>
+            <defs>
+                <symbol id="N" class="letters" viewBox="0 0 950 350">
+                    <path d="M91.025,261.32l-0.351-71.328c0.027-33.871-0.187-64.12,15.351-80.486 c30.619-32.251,92.329-20.736,131.251,67.673l23.667,49.231" />
+                </symbol>
+                <symbol id="U" class="letters" viewBox="0 0 950 350">
+                    <path d="M435.08,95.33l0.53,65.746c-0.02,24.145-3.976,51.073-14.431,62.776 c-21.154,23.68-69.258,30.498-103.569-47.442l-21.624-46.15" />
+                </symbol>
+                <symbol id="R" class="letters" viewBox="0 0 950 350">
+                    <path d="M501.109,94.173c0,0,69.512-3.199,69.512,36.584c0,39.456-53.646,43.333-53.646,43.333 s42.217,31.169,59.562,85.249" />
+                </symbol>
+                <symbol id="E" class="letters" viewBox="0 0 950 350">
+                    <path d="M691.676,94.173c0,0-47.658,1.156-47.658,39.584c0,33.826,47.658,40.333,47.658,40.333 s-48.658,4.075-48.658,42.958c0,43.291,48.658,44.63,48.658,44.63" />
+                </symbol>
+                <symbol id="D" class="letters" viewBox="0 0 950 350">
+                    <path d="M765.143,94.173c0,0,90.467,6.167,90.467,79.917c0,81.569-90.467,87.589-90.467,87.589" />
+                </symbol>
+                <symbol id="lozenge" class="surround" viewBox="0 0 950 350">
+                    <path d="M928.346,187.823c0,56.538-45.346,145.278-172.679,145.278H538.823c-69.537,0-145.34,0-163.683,0c-18.334,0-154.007,0-171.474,0c-6.944,0-93.709,0-93.709,0c-49.002,0-88.699-19.544-88.699-81.165V143.333c0-62.46,56.723-122.074,128.723-122.074c0,0,53.333,0,69.685,0c40.858,0,80.999,0,99.333,0c18.854,0,188.724,0,209.334,0c4.724,0,227.333,0,227.333,0c127.333,0,172.679,88.786,172.679,145.324V187.823z" />
+                </symbol>
+            </defs>
+
+            <use xlink:href="#lozenge" class="outline colourdrifty-A" style="stroke:Navy;" />
+            <g class="outline">
+                <g class="colourdrifty-B" style="stroke:Red;">
+                    <use xlink:href="#N" />
+                    <use xlink:href="#U" />
+                    <use xlink:href="#R" />
+                </g>
+                <g class="colourdrifty-C" style="stroke:LimeGreen;">
+                    <use xlink:href="#E" />
+                    <use xlink:href="#D" />
+                </g>
+            </g>
+            <g class="gap" style="stroke:#FFF;">
+                <use xlink:href="#N" />
+                <use xlink:href="#U" />
+                <use xlink:href="#R" />
+                <use xlink:href="#E" />
+                <use xlink:href="#D" />
+            </g>
+            <g class="inline">
+                <g class="colourdrifty-A" style="stroke:Navy;">
+                    <use xlink:href="#N" />
+                    <use xlink:href="#U" />
+                    <use xlink:href="#R" />
+                </g>
+                <g class=" colourdrifty-D" style="stroke:Black;">
+                    <use xlink:href="#E" />
+                    <use xlink:href="#D" />
+                </g>
+            </g>
+        </svg>
