@@ -1,0 +1,340 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Quasonama by Ian Tindale of Nured</title>
+    <meta name="description" content="Nured Quasonama">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="qsa-main.css">
+    <link rel="stylesheet" href="qsa-style.css">
+    <link rel="stylesheet" href="qsa-svg.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Aguafina+Script' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using a <strong>crap</strong> browser. FFS, <a href="http://browsehappy.com/">sort it out</a>.</p>
+        <![endif]-->
+    <div class="header-container">
+        <header class="wrapper clearfix">
+            <h1 class="title">
+                <span id="nametitle">Quasonama</span>
+                <span> </span>
+                <span id="subtitle">Four channels of audio for the 21st Century</span></h1>
+        </header>
+    </div>
+    <div class="main-container">
+        <div class="main wrapper clearfix">
+            <article>
+                <header>
+                    <figure id="graphic-explanation-area">
+                        <svg id="Quasonama-diagram-master" width="100%" height="100%" viewBox="0 0 548 436" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="stroke-linecap:round;stroke-linejoin:round">
+                            <defs>
+                                <!-- left and right are a certain red and blue colour, these change those colours -->
+                                <filter id="hueRotate-inboard">
+                                    <!-- hueRotate effects shift the blue or red colour around slightly -->
+                                    <feColorMatrix in="SourceGraphic" type="hueRotate" values="+5" />
+                                </filter>
+                                <filter id="hueRotate-outboard">
+                                    <feColorMatrix in="SourceGraphic" type="hueRotate" values="-5" />
+                                </filter>
+                                <filter id="alpha-stereoImage">
+                                    <!-- this makes the stereoImage items semitransparent -->
+                                    <feComponentTransfer>
+                                        <feFuncA type="discrete" tableValues="0 0.5" />
+                                    </feComponentTransfer>
+                                </filter>
+                                <filter id="alpha-segments">
+                                    <!-- this makes the segments slightly transparent  -->
+                                    <!-- do not use this - it makes the black strokes look ragged and also looks different between Safari and Firefox + Chrome -->
+                                    <feComponentTransfer>
+                                        <feFuncA type="discrete" tableValues="0 0.85" />
+                                    </feComponentTransfer>
+                                </filter>
+                                <filter id="dropshad" width="200%" height="200%">
+                                    <feOffset result="offOut" in="SourceGraphic" dx=".5" dy="1.5" />
+                                    <feColorMatrix result="matrixOut" in="offOut" type="matrix" values="0.05 0 0 0 0 0 0.05 0 0 0 0 0 0.05 0 0 0 0 0 1 0" />
+                                    <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="1.5" />
+                                    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                                </filter>
+                            </defs>
+                            <g id="arcs">
+                                <!-- these are the background-level hemipan segment shapes -->
+                                <path id="left-hemipan-segment" d="M273.06 275.764l-160.428 94.392c-16.275-27.689-25.61-59.951-25.609-94.391 0-103.023 83.516-186.539 186.537-186.539l-0.5 186.538Z" class="leftsegment" />
+                                <path id="right-hemipan-segment" d="M273.56 275.764l162.854 91.043c15.084-26.93 23.686-57.98 23.687-91.042 0-103.022-83.518-186.539-186.541-186.539l0 186.538Z" class="rightsegment" />
+                                <!-- these are the two curved arc lines with arrow heads, indicating the 120° radius pair -->
+                                <g id="left-120-arrow-arc">
+                                    <path id="left-120-arc" d="M82.427 386.516c-19.33-32.886-30.417-71.203-30.416-112.107 0-122.36 99.192-221.551 221.549-221.551" class="left-arc" />
+                                    <!-- this is interesting, the arc triangles are two separate paths in the same d attribute-->
+                                    <path id="left arc triangles" class="left" d="M83.432 388.926l-18.099-13.117 17.701-9.232 0.398 22.349ZM275.384 52.765l-19.542 10.852 -0.878-19.944 20.42 9.092Z" />
+                                    <!-- the label text -->
+                                    <g id="left-arc-label" transform="matrix(0.536899,0.843647,-0.843647,0.536899,141.608,-227.538)">
+                                        <text x="485px" y="380px" class="label arc-angle">-120&deg;</text>
+                                    </g>
+                                </g>
+                                <text id="zerodegrees" x="268px" y="45px" class="label arc-angle">0&deg;</text>
+                                <g id="right-120-arrow-arc">
+                                    <path id="right-120-arc" class="right-arc" d="M467.549 383.338c17.968-32.079 28.215-69.065 28.216-108.448 0-122.718-99.486-222.203-222.205-222.203" />
+                                    <path id="right arc triangles" class="right" d="M271.374 52.62l20.37-9.203 -0.77 19.949 -19.6-10.746ZM466.5 385.858l-0.089-22.353 17.897 8.844 -17.808 13.509Z" />
+                                    <g id="right arc label" transform="matrix(0.519996,-0.854169,0.854169,0.519996,-336.258,216.784)">
+                                        <text x="226px" y="774px" class="label arc-angle">+120&deg;</text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="mic-positions">
+                                <!-- this entire layer pertains to the positions related to getting sound in -->
+                                <g id="right-X-Y-mic-array">
+                                    <!-- each mic array may be considered equivalent to a stereo X-Y array even if it is not -->
+                                    <path id="right-X-Y-mic-arrow" d="M322.237 301.379l-46.864-81.188 37.406-21.596 -12.299-21.303 98.06 26.138 -26.162 97.63 -12.396-21.467 -37.745 21.786Z" class="right" filter="url(#alpha-stereoImage)" />
+                                    <g filter="url(#dropshad)">
+                                        <g transform="matrix(0.516448,0.894638,-0.894638,0.516448,-691.688,-280.73)">
+                                            <text x="901.495px" y="-600.084px" class="label microphone">right mic</text>
+                                            <text x="915.107px" y="-581.91px" class="label microphone">array</text>
+                                        </g>
+                                        <g transform="matrix(0.49995,0.866054,-0.866054,0.49995,-585.218,470.621)">
+                                            <!-- the equivalent imaginary 'centre' of the right X-Y array is thought of as +60° -->
+                                            <text x="233.003px" y="-930.381px" class="label mic-stereoimage-angle">+60&deg;</text>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="left-X-Y-mic-array">
+                                    <!-- the imaginary arrays are represented by big fat tinted arrows between actual mic positions -->
+                                    <path id="left-X-Y mic-arrow" d="M271.759 220.845l-47.034 81.46 -37.533-21.669 -12.343 21.375 -26.484-98.329 97.958-26.244 -12.435 21.542 37.871 21.865Z" class="left" filter="url(#alpha-stereoImage)" />
+                                    <g filter="url(#dropshad)">
+                                        <g transform="matrix(0.518275,-0.897623,0.901918,0.510837,-738.093,-296.997)">
+                                            <text x="-25.243px" y="1063.2px" class="label microphone">left mic</text>
+                                            <text x="-16.904px" y="1081.25px" class="label microphone">array</text>
+                                        </g>
+                                        <g transform="matrix(0.500024,-0.866011,0.866011,0.500024,-95.8458,-775.719)">
+                                            <!-- the equivalent imaginary 'centre' of the left X-Y array is thought of as -60° -->
+                                            <text x="-749.812px" y="757.998px" class="label mic-stereoimage-angle">-60&deg;</text>
+                                        </g>
+                                    </g>
+                                </g>
+                                <!-- these are four mic positions: left and right; inboard (aside the screen) and outboard (over your ear) -->
+                                <g id="left-outboard-mic">
+                                    <path id="left-outboard-mic-arrow" d="M185.818 277.041l11.185 41.751 -19.236 5.156 2.935 10.955 -40.556-23.345 23.302-40.358 2.96 11.04 19.41-5.199Z" class="left" filter="url(#hueRotate-outboard)" />
+                                    <g transform="matrix(-0.258794,-0.965932,0.965932,-0.258794,-593.602,-934.487)">
+                                        <text x="-1406.84px" y="435.435px" class="label microphone">mic</text>
+                                    </g>
+                                    <g transform="matrix(-0.258792,-0.965933,0.965933,-0.258792,-583.886,-925.872)">
+                                        <text x="-1402.81px" y="410.829px" class="label microphoneangle">-105&deg;</text>
+                                    </g>
+                                </g>
+                                <g id="left-inboard-mic">
+                                    <path id="left-inboard-mic-arrow" d="M271.889 187.957l-41.76 11.188 -5.156-19.24 -10.957 2.936 23.348-40.564 40.366 23.307 -11.043 2.96 5.202 19.413Z" class="left" filter="url(#hueRotate-inboard)" />
+                                    <g transform="matrix(0.965932,-0.258794,0.258794,0.965932,45.9688,-168.821)">
+                                        <text x="91.356px" y="399.189px" class="label microphone">mic</text>
+                                    </g>
+                                    <g transform="matrix(0.965933,-0.258792,0.258792,0.965933,43.355,-169.13)">
+                                        <text x="91.334px" y="383.77px" class="label microphoneangle">-15&deg;</text>
+                                    </g>
+                                </g>
+                                <g id="right-inboard-mic">
+                                    <path id="right-inboard-mic-arrow" d="M316.245 198.949l-41.744-11.187 5.153-19.233 -10.954-2.937 40.49-23.447 23.296 40.355 -11.04-2.957 -5.201 19.406Z" class="right" filter="url(#hueRotate-inboard)" />
+                                    <g transform="matrix(0.965919,0.258845,-0.258845,0.965919,-90.2228,180.219)">
+                                        <text x="363.405px" y="-90.962px" class="label microphone">mic</text>
+                                    </g>
+                                    <g transform="matrix(0.965919,0.258846,-0.258846,0.965919,-88.3164,181.94)">
+                                        <text x="356.695px" y="-108.052px" class="label microphoneangle">+15&deg;</text>
+                                    </g>
+                                </g>
+                                <g id="right-outboard-mic">
+                                    <path id="right-outboard-mic-arrow" d="M350.471 318.95l11.182-41.731 19.227 5.151 2.936-10.95 23.44 40.475 -40.342 23.289 2.957-11.036 -19.4-5.198Z" class="right" filter="url(#hueRotate-outboard)" />
+                                    <g transform="matrix(-0.258845,0.965919,-0.965919,-0.258845,-1120.19,428.812)">
+                                        <text x="-521.892px" y="-1395.92px" class="label microphone">mic</text>
+                                    </g>
+                                    <g transform="matrix(-0.258846,0.965919,-0.965919,-0.258846,-1134.73,429.796)">
+                                        <text x="-535.598px" y="-1426.19px" class="label microphoneangle">+105&deg;</text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="listener-egocentre">
+                                <!-- this arrow represents the listener or recorder head position -->
+                                <path id="egocentre-arrow" d="M293.776 318 l -40 0 0 -18 -10 0 30 -20 30 20 -10 0 0 18 Z" />
+                                <text x="255.2px" y="310px" class="label egocentre">(you)</text>
+                            </g>
+                            <g id="legends">
+                                <g id="legend-segments">
+                                    <text x="217px" y="365px" class="label egocentre">This represents the</text>
+                                    <text x="162px" y="385px" class="label egocentre">immersive panoramic soundfield</text>
+                                    <text x="162px" y="405px" class="label egocentre">as imagined, viewed from above</text>
+                                </g>
+                                <g id="legend-speaker">
+                                    <text x="212px" y="365px" class="label egocentre">This represents static</text>
+                                    <text x="170px" y="385px" class="label egocentre">positions of the four speakers</text>
+                                    <text x="172px" y="405px" class="label egocentre">relative to the head direction</text>
+                                </g>
+                                <g id="legend-microphone">
+                                    <text x="217px" y="365px" class="label egocentre">This represents the</text>
+                                    <text x="164px" y="385px" class="label egocentre">directions for four microphones</text>
+                                    <text x="160px" y="405px" class="label egocentre">or two stereo microphone arrays</text>
+                                </g>
+                            </g>
+                            <g id="speaker-positions">
+                                <!-- this entire layer pertains to the positions related to putting sound out -->
+                                <g id="right-summed-image">
+                                    <!-- each side’s speaker pair may be considered equivalent to a conventional stereo speaker set even if it is not -->
+                                    <path id="right-summed-image-arrow" d="M356.959 69.518c91.283 35.136 149.136 133.365 136.664 234.894l-35.879 20.872 20.547 33.045 -175.844-99.839 0-204.342 21.06 35.442 33.452-20.072Z" class="right" filter="url(#alpha-stereoImage)" />
+                                    <g filter="url(#dropshad)">
+                                        <g transform="matrix(1.2778,2.21322,-2.21322,1.2778,-2144.69,-1177.87)">
+                                            <text x="927.683px" y="-600.084px" class="label speaker-stereoimage">sum of right</text>
+                                            <text x="923.123px" y="-584.193px" class="label speaker-stereoimage">stereo image</text>
+                                        </g>
+                                        <g transform="matrix(0.5,0.866025,-0.866025,0.5,-1988.38,1472.97)">
+                                            <!-- the equivalent imaginary 'centre' of the right stereo image is thought of as +60° -->
+                                            <text x="38.761px" y="-2615.62px" class="label speaker-stereoimage-angle">+60&deg;</text>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="left-summed-image">
+                                    <!-- the imaginary stereo images are represented by big fat tinted arrows between actual speaker positions -->
+                                    <path id="left-summed-image-arrow" d="M54.497 305.667c-11.52-105.333 40.198-196.521 134.079-235.342l35.635 19.942 21.493-36.068 0 205.94 -176.388 99.579 20.341-34.32 -35.16-19.731Z" class="left" filter="url(#alpha-stereoImage)" />
+                                    <g filter="url(#dropshad)">
+                                        <g transform="matrix(1.27995,-2.21694,2.21694,1.27995,-2257.33,-1114.58)">
+                                            <text x="-8.781px" y="1063.2px" class="label speaker-stereoimage">sum of left</text>
+                                            <text x="-16.014px" y="1079.13px" class="label speaker-stereoimage">stereo image</text>
+                                        </g>
+                                        <g transform="matrix(0.5,-0.866025,0.866025,0.5,-71.7043,-2301)">
+                                            <!-- the equivalent imaginary 'centre' of the left stereo image is thought of as -60° -->
+                                            <text x="-2102.86px" y="1536.58px" class="label speaker-stereoimage-angle">-60&deg;</text>
+                                        </g>
+                                    </g>
+                                </g>
+                                <!-- these are four speaker positions: left and right; inboard (aside the screen) and outboard (over your ear) -->
+                                <g id="left-inboard-speaker">
+                                    <path id="left-inboard-speaker-arrow" d="M173.416 19.119l58.439-15.656 7.215 26.924 15.334-4.108 -32.673 56.766 -56.49-32.616 15.454-4.143 -7.279-27.167Z" class="left" filter="url(#hueRotate-inboard)" />
+                                    <g transform="matrix(0.965926,-0.258819,0.258819,0.965926,-675.027,-418.071)">
+                                        <text x="725.248px" y="658.201px" class="label speaker">left</text>
+                                        <text x="709.597px" y="676.201px" class="label speaker">inboard</text>
+                                    </g>
+                                    <g transform="matrix(0.965926,-0.258819,0.258819,0.965926,69.5939,-180.689)">
+                                        <text x="60.625px" y="278.357px" class="label speakerangle">-15&deg;</text>
+                                    </g>
+                                </g>
+                                <g id="left-outboard-speaker">
+                                    <path id="left-outboard-speaker-arrow" d="M18.276 375.395l-15.656-58.438 26.924-7.217 -4.108-15.334 56.766 32.676 -32.616 56.488 -4.143-15.453 -27.167 7.278Z" class="left" filter="url(#hueRotate-outboard)" />
+                                    <g transform="matrix(0.965926,-0.258819,0.258819,0.965926,559.304,-513.617)">
+                                        <text x="-751.504px" y="674.93px" class="label speaker">left</text>
+                                        <text x="-751.504px" y="692.93px" class="label speaker">outboard</text>
+                                    </g>
+                                    <g transform="matrix(0.965926,-0.258819,0.258819,0.965926,136.623,134.783)">
+                                        <text x="-175.434px" y="198.257px" class="label speakerangle">-105&deg;</text>
+                                    </g>
+                                </g>
+                                <g id="right-inboard-speaker">
+                                    <path id="right-inboard-speaker-arrow" d="M315.236 2.795l58.436 15.66 -7.213 26.924 15.334 4.111 -56.681 32.823 -32.61-56.491 15.454 4.139 7.28-27.166Z" class="right" filter="url(#hueRotate-inboard)" />
+                                    <g transform="matrix(0.965926,0.258819,-0.258819,0.965926,-698.916,-419.305)">
+                                        <text x="1103.38px" y="161.548px" class="label speaker">right</text>
+                                        <text x="1092.89px" y="179.548px" class="label speaker">inboard</text>
+                                    </g>
+                                    <g transform="matrix(0.965926,0.258819,-0.258819,0.965926,-115.452,171.473)">
+                                        <text x="382.804px" y="-216.378px" class="label speakerangle">+15&deg;</text>
+                                    </g>
+                                </g>
+                                <g id="right-outboard-speaker">
+                                    <path id="right-outboard-speaker-arrow" d="M545.354 317.505l-15.66 58.438 -26.924-7.213 -4.111 15.333 -32.825-56.679 56.493-32.613 -4.14 15.455 27.167 7.279Z" class="right" filter="url(#hueRotate-outboard)" />
+                                    <g transform="matrix(0.965926,0.258819,-0.258819,0.965926,-23.5219,1402.3)">
+                                        <text x="233.335px" y="-1180.56px" class="label speaker">right</text>
+                                        <text x="202.717px" y="-1162.56px" class="label speaker">outboard</text>
+                                    </g>
+                                    <g transform="matrix(0.965926,0.258819,-0.258819,0.965926,378.968,56.9045)">
+                                        <text x="170.028px" y="261.976px" class="label speakerangle">+105&deg;</text>
+                                    </g>
+                                </g>
+                            </g>
+                            <image src="fallback-diagram.gif" xlink:href="">
+                        </svg>
+                        <!--
+                        <canvas id="video-head-overlay"></canvas>
+                        <iframe width="420" height="315">
+                            <source src="http://www.youtube.com/watch?v=5r_27KmKRpo?autoplay=1" />
+                            <track kind="captions" src="quasonama.vtt" srclang="en" />
+                        </iframe>
+                        -->
+                        <nav id="overlay-buttons" class="wrapper clearfix">
+                            <ul>
+                                <li><a href="#" id="playout-button">playout</a>
+                                </li>
+                                <li><a href="#" id="capture-button">capture</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--
+                        <figcaption>The two buttons above will show you the positional information for speakers or mics.</figcaption>
+                        -->
+                    </figure>
+                </header>
+                <section id="section0" class="apparent">
+                    <h2>We don&rsquo;t need surround sound</h2>
+                    <p>There is little point in full 360&deg; &ldquo;surround sound&rdquo;. If I heard a sudden sound behind me I&rsquo;d turn around to see what it is, thus ignoring the screen! Besides, few rooms are arranged for &ldquo;surround&rdquo; &mdash; seating is often against a wall, leaving no rearward distance required by most &ldquo;surround sound&rdquo; schemes.</p>
+                    <p>We have two ears, but that does not mean spatially realistic sound only needs two channels. A sonic partial panorama that &ldquo;wraps around&rdquo; the forward focus of attention can be more effective. Two-speaker stereo is often more deficient than assumed, while headphones can sound too separate. In real life, natural crosstalk is an important part of sonic identity.</p>
+                </section>
+                <section id="section1" class="obscured">
+                    <h2>Quasonama is panoramic sound</h2>
+                    <p>The aim of Quasonama is to portray a 240&deg; partial-panoramic soundfield. This is two thirds of a circle. The left side is represented by a 120&deg; arc, the right side by another 120&deg; arc. The remaining 120&deg; arc behind the listener is left to &ldquo;phantom&rdquo; interpretation as precise positioning there is relatively unimportant. There will be ample rearward coverage from both left and right arcs to create the impression of &ldquo;behind&rdquo;. Although the arcs are depicted as 120&deg;, of course the coverage is far wider &mdash; greater than a hemisphere. When you stand adjacent to a speaker, of course you still hear it adequately! </p>
+                </section>
+                <section id="section2" class="obscured">
+                    <h2>Virtual reality audio</h2>
+                    <p>Quasonama will be vital for virtual reality. A VR headset may position the left and right inboard emanators a distance to the front of the ears and either side of the viewing apparatus. The outboard emanators may sit behind the earlobes (slightly outward from the head to prevent &ldquo;tucking in&rdquo; to neck curvature). The sensation of front to rear positional transition can rely on earlobe produced HRTF and HRIR. The difference in panning a sound from outboard to inboard across a single ear&rsquo;s surroundings would cause a partial &ldquo;binaural&rdquo;-like effect for that ear. Combine two ears and you would have an entire immersive panorama &mdash; covering a little bit behind the left ear to a little bit behind the right ear via everything across the front of the listener.</p>
+                </section>
+                <section id="section3" class="obscured">
+                    <h2>Two modes of Quasonama</h2>
+                    <p>The <strong>Static mode</strong> of Quasonama assumes the room and the speakers will not move. This applies to films, movies, music and other audio reproductions of performances. </p>
+                    <p>The <strong>Mobile mode</strong> assumes the sound emanators should move along with the head of the listener, such as the case of a VR headset arrangement. In these circumstances, the emanator configuration is still &plusmn;15&deg; &amp; &plusmn;105&deg; but, for example, as dynamic virtual sources derived or matrixed from a full 360&deg; soundscape.</p>
+                </section>
+                <section id="section4" class="obscured">
+                    <h2>A stereo pair of stereo pairs</h2>
+                    <p>Where no Quasonama speaker or headset arrangement is available, simply summing the left pair should produce a single &ldquo;left&rdquo; signal. Similarly, summing the right pair will produce a single &ldquo;right&rdquo; signal. Doing both returns us to ordinary stereo again. A Quasonama arrangement could be created from two existing satellite + subwoofer sets. The left inboard and outboard occupy one entire 2.1 speaker system (satellites become one side’s inboard and outboard with subwoofer in the middle of those) and the right inboard and outboard similarly occupy another entire 2.1 speaker system. Hence each 2.1 system is considered either totally a left set or totally a right set.</p>
+                </section>
+                <section id="section5" class="obscured">
+                    <h2>Not encoded but discrete</h2>
+                    <p>The advantage of Quasonama is a simpler implementation of four discrete full range unencoded channels. Conventional stereo is two discrete full range unencoded channels. By contrast, existing &ldquo;surround sound&rdquo; schemes are encoding schemes. The Quasonama signal is not encoded, hence the playing and amplification arrangements are a lot simpler to implement &mdash; providing there are four <strong>discrete</strong> channels available throughout the entire path from creation to delivery to consumption. In the past encoding was a consumer necessity for delivery, storage and transport of multi-channel audio. Future products should strive to include discrete four channel audio by default, easily able to be summable into conventional two channel stereo.</p>
+                </section>
+                <section id="section6" class="obscured">
+                    <h2>Inboard versus centre</h2>
+                    <p>The centre speaker in &ldquo;surround&rdquo; is commonly considered a &ldquo;dialogue&rdquo; channel. Influence of cinema sound schemes (rather than music) dominate sonic arrangements in the home, for those wishing to transcend two channel stereo. The two front (inboard) speakers of Quasonama are closer together than the equivalent front speakers in current &ldquo;surround&rdquo;. The -15&deg; and +15&deg; positions resemble placement either side of a fairly large screen in the home. The inboard speakers function as their own less distant virtual pair, affording more precise positioning across the screen-sized soundscape image. The inboard pair are close enough together to form a tight stereo field the size of the screen and yet avoid a &ldquo;phantom centre&rdquo; effect.</p>
+                </section>
+                <section id="section7" class="obscured">
+                    <h2>A partial sonic panorama</h2>
+                    <p>The full immersive effect comes from the left sum of the left outboard and inboard, together with the right sum of the right outboard and inboard. Overall, this produces a wider panoramic soundscape, as well as featuring a narrower front-focus soundscape. As you can imagine, from four discrete channels, we cover a partial panoramic soundscape that goes from behind one shoulder all the way round to behind the other shoulder, via a detailed front area. You would still perceive any incidental &ldquo;behind you&rdquo; sound distinctly enough, when present. It is preferable to consider any sound immediately behind to be an unwanted distraction, with few exception cases.</p>
+                </section>
+                <section id="section8" class="obscured">
+                    <h2>Future deployment</h2>
+                    <p>Games, serious games, educational material, simulations, as well as &lsquo;ordinary&rsquo; television broadcasts and films would benefit from adopting Quasonama. Most feature films or serious television broadcasts are already sourced for &ldquo;surround&rdquo; encoding. Widespread acceptance of the idea of Quasonama would be helped by considering it a good idea to produce immersive content with discrete four channel audio, and to publicise the ease of implementation. Imagine if tomorrow it were natural to rely on the presence of four discrete audio channels all the way through from creation to consumption.</p>
+                </section>
+            </article>
+            <aside>
+                <object type="image/svg+xml" data="Quasonama-Tekton-logo-01.svg" class="logo">
+                    <img src="fallback-logo.gif" alt="Quasonama logo">
+                    <!-- fallback image in CSS -->
+                </object>
+                <h1>Qua so <em>what?</em></h1>
+                <p>The name? Three letters each from <em>Quad</em> or <em>Quartet</em>; <em>Sonic</em> or <em>sound</em>; <em>Panorama</em> or <em>diorama</em>. The idea? A sensible implementation of immersive sound.</p>
+                <ol id="tocmenu"></ol>
+                <p>Quasonama is not a technology, not a product, and not even anything I can sell or make money out of. It is just a good idea and an exhortation to the world to help promote, develop and believe in this idea with me.</p>
+            </aside>
+
+        </div>
+        <!-- #main -->
+    </div>
+    <!-- #main-container -->
+
+    <div class="footer-container">
+        <footer class="wrapper">
+            <p>Quasonama is an idea by <strong>Ian Tindale</strong>, and Nured is a startup for educational audio development and multimedia production. The names &ldquo;Nured&rdquo; and &ldquo;Quasonama&rdquo; were thought up by Ian Tindale between 2014 and 2016. Ian Tindale is <em>u0421793</em> on twitter. On Youtube, one can experience the <a href="https://www.youtube.com/channel/UCJOuI-LbKNs5SDxjhJjHxZg" style="color: white;">Nured channel</a>.</p>
+            <p>This web page design is written, drawn, coded in HTML5 CSS3 and SVG by Ian Tindale &copy; 2016</p>
+        </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+    <script src="qsa-main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+/*  ==================================
+    Style rules specifically pertinent
+    to the Quasonama page
+    ================================== */
+
+div.header-container header h1.title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: floralwhite;
+}
+
+span#subtitle {
+    font-size: 80%;
+    font-family: 'Aguafina Script', cursive;
+    font-weight: 400;
+}
+
+span#nametitle {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+span#menu-instructions {
+    font: 14px/15px Helvetica, Helvetica Neue, Arial;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 3px;
+    text-align: left;
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+}
+
+figure#graphic-explanation-area {
+    background: linear-gradient(hsla(40, 20%, 90%, 0) 5%, hsla(40, 20%, 90%, .50) 25%, hsla(40, 20%, 90%, .50) 100%);
+    margin: .72rem 0 auto;
+    padding: 0 0 .72rem;
+
+}
+
+figure#graphic-explanation-area:before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background: url(IMG_0428-taragona-beach-cyl-pano1.jpg);*/
+    background-image:url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2450.jpg');
+background-image: -webkit-image-set(url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_600.jpg') 600w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1161.jpg') 1161w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1550.jpg') 1550w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1877.jpg') 1877w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2189.jpg') 2189w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2450.jpg') 2450w);
+background-image: -moz-image-set(url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_600.jpg') 600w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1161.jpg') 1161w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1550.jpg') 1550w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1877.jpg') 1877w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2189.jpg') 2189w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2450.jpg') 2450w);
+background-image: -o-image-set(url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_600.jpg') 600w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1161.jpg') 1161w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1550.jpg') 1550w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1877.jpg') 1877w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2189.jpg') 2189w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2450.jpg') 2450w);
+background-image: -ms-image-set(url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_600.jpg') 600w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1161.jpg') 1161w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1550.jpg') 1550w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1877.jpg') 1877w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2189.jpg') 2189w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2450.jpg') 2450w);
+background-image: image-set(url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_600.jpg') 600w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1161.jpg') 1161w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1550.jpg') 1550w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_1877.jpg') 1877w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2189.jpg') 2189w, url('IMG_0428-taragona-beach-cyl-pano1_o4qsxb_c_scale,w_2450.jpg') 2450w);
+
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    overflow: hidden;
+}
+
+/*
+// need to implement a responsive background that goes smaller 
+
+
+
+
+*/
+
+
+
+
+
+
+@keyframes pan-the-background {
+    /*  this moves the background image 
+        from centre to left then right 
+        then back to centre */
+    
+    0% {
+        background-position: center;
+    }
+    25% {
+        background-position: left;
+    }
+    75% {
+        background-position: right;
+    }
+    100% {
+        background-position: center;
+    }
+}
+
+#graphic-explanation-area:before {
+    animation: pan-the-background 12s ease 5s 1 normal both;
+}
+
+#graphic-explanation-area figcaption {
+    font-size: 94%;
+    font-style: italic;
+    margin: .5rem;
+    padding: 6px;
+    background-color: hsla(40, 66%, 80%, .33);
+    border-top:  thin solid hsla(40, 33%, 55%, .33);
+color: hsla(40, 25%, 30%, .87);
+}
+
+#video-head-overlay {
+    border: thin pink dashed;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+img#logotype {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+}
+
+section.apparent {
+    display: block;
+}
+
+section.obscured {
+    display: none;
+}
+
+section p {
+    padding: 0 1rem .5rem;
+}
+
+ol#tocmenu {
+    list-style-position: outside;
+    padding: 0px;
+    background-color: cornsilk;
+    margin: 0px;
+}
+
+ol#tocmenu li {
+    border-bottom: dotted thin hsl(209, 60%, 86%);
+}
+
+ol#tocmenu li.selected {
+    background-color: hsl(48, 90%, 85%);
+    border-bottom: dotted thin hsl(40, 75%, 75%);
+}
+
+ol#tocmenu li a {
+    padding-left: 3px;
+    color: hsl(225, 65%, 55%);
+    text-decoration: none;
+}
+
+ol#tocmenu li:last-child {
+    margin-bottom: 0;
+}
+
+#nured-logotype-svg {
+    float: right;
+    margin: 1.25rem 0 0 1rem;
+}

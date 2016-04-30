@@ -1,0 +1,549 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+/* ===================
+    ALL: Ian’s Theme
+   =================== */
+
+.header-container {
+    text-align: center;
+    border-bottom: 3px solid hsl(225, 65%, 25%);
+    width: 100%;
+}
+
+.header-container,
+.footer-container {
+    background: hsla(195, 65%, 40%, 1);
+}
+
+.footer-container {
+    border-top: 20px solid hsl(225, 65%, 25%);
+}
+
+.main aside {
+    border-top: none;
+    color: hsl(225, 65%, 25%);
+}
+
+.title {
+    color: white;
+}
+
+.header-container,
+nav#overlay-buttons a {
+    -webkit-box-shadow: 5px 5px 6px hsla(0, 0%, 0%, .33);
+    -moz-box-shadow: 5px 5px 6px hsla(0, 0%, 0%, .33);
+    box-shadow: 5px 5px 6px hsla(0, 0%, 0%, .33);
+}
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    margin: 0 1rem 0 0;
+    padding: 10px 10px;
+    color: hsl(225, 65%, 25%);
+    background: hsl(40, 65%, 75%);
+    border-radius: .72em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:visited {}
+
+nav a:hover {
+    text-decoration: underline;
+}
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main article {}
+
+.main aside {
+    padding: 6px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+aside {
+    /* flexbox to change arrangement of what’s inside aside */
+    
+    display: flex;
+    flex-direction: column;
+    background: hsl(40, 65%, 75%);
+    /* For browsers that do not support gradients */
+    
+    background: linear-gradient(hsla(40, 65%, 75%, 1) 0%, hsla(40, 65%, 75%, 1) 40%, hsla(40, 65%, 75%, 0) 50%);
+    opacity: 0.87;
+    filter: alpha(opacity=87);
+    /* For IE8 and earlier */
+}
+/*  for mobile and phones, 
+    I want the TOC OL first, 
+    then the logo, 
+    then H1 and both paras */
+
+aside > object,
+aside > object + h1,
+aside > h1 + p,
+aside > p + ol,
+aside > ol + p {
+    margin: .25rem 0;
+}
+
+aside > object {
+    order: 2;
+    max-width: none;
+}
+
+aside > object + h1 {
+    order: 3;
+}
+
+aside > h1 + p {
+    order: 4;
+}
+
+aside > p + ol {
+    order: 1;
+}
+
+aside > ol + p {
+    order: 5;
+}
+
+aside p,
+aside h1 {
+    color: hsl(0, 0%, 97%);
+}
+
+#subtitle {
+    display: none;
+}
+
+#nametitle {
+    display: inline;
+}
+
+nav a:active {
+    color: black;
+    background: hsl(40, 90%, 66%);
+}
+
+html,
+.main section {
+    background-color: hsl(208, 100%, 97%);
+    /* aliceblue */
+}
+
+.main article {
+    background-color: transparent;
+}
+
+.main section h2 {
+    background-color: hsl(209, 76%, 90%);
+    padding: 6px 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main header h1 {
+    padding: 9px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main {
+    padding-top: 6px;
+}
+
+.main h1 {
+    font: 30px/31px 'Open Sans Condensed', sans-serif;
+}
+
+.main h2 {
+    color: hsl(225, 65%, 25%);
+    font: 24px/25px 'Open Sans Condensed', sans-serif;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    /* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+    /* flexbox to change arrangement of what’s inside aside */
+    
+    aside {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(hsla(40, 65%, 75%, 1) 0%, hsla(40, 65%, 75%, 1) 50%, hsla(40, 65%, 75%, 0) 60%);
+    }
+    /*  for intermediate width viewports, 
+    I want the TOC OL first, 
+    then the logo but width restricted
+    then H1 and both paras */
+    
+    aside > object {
+        order: 2;
+        max-width: 15rem;
+    }
+    aside > object + h1 {
+        order: 3;
+    }
+    aside > h1 + p {
+        order: 4;
+    }
+    aside > p + ol {
+        order: 1;
+    }
+    aside > ol + p {
+        order: 5;
+    }
+    #subtitle {
+        display: inline;
+    }
+    #nametitle {
+        display: none;
+    }
+    nav ul {}
+    nav#overlay-buttons a::after {
+        content: " positions";
+    }
+    nav li:first-child a {
+        margin-left: 0;
+    }
+    nav li:last-child a {
+        margin-right: 0;
+    }
+    /* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+    
+    nav ul li {
+        display: inline;
+    }
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+    /* flexbox to change arrangement of what’s inside aside */
+    
+    aside {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(hsla(40, 65%, 75%, 0) 15%, hsla(40, 65%, 75%, 1) 20%, hsla(40, 65%, 75%, 1) 100%);
+    }
+    /*  for wide viewports, 
+    I want the logo first, 
+    then the H1, then one para
+    then the TOC OL, 
+    then the other para */
+    
+    aside > object {
+        order: 1;
+        max-width: none;
+    }
+    aside > object + h1 {
+        order: 2;
+    }
+    aside > h1 + p {
+        order: 3;
+    }
+    aside > p + ol {
+        order: 4;
+    }
+    aside > ol + p {
+        order: 5;
+    }
+    aside p,
+    aside h1 {
+        color: hsl(225, 65%, 25%);
+    }
+    #subtitle {
+        display: inline;
+    }
+    #nametitle {
+        display: inline;
+    }
+    .main aside {
+        -webkit-box-shadow: 5px 5px 6px hsla(0, 0%, 0%, .33);
+        -moz-box-shadow: 5px 5px 6px hsla(0, 0%, 0%, .33);
+        box-shadow: 5px 5px 6px hsla(0, 0%, 0%, .33);
+    }
+    /* ============
+    WIDE: Menu
+   ============ */
+    
+    .header-container {
+        float: right;
+    }
+    .title {}
+    nav#overlay-buttons {
+        margin: 0;
+        padding: 0;
+    }
+    nav ul {
+        padding: 0 .72em 0;
+    }
+    nav.wrapper {
+        margin: 0 5%;
+    }
+    /* ============
+    WIDE: Main
+   ============ */
+    
+    .main article {
+        float: left;
+        width: 57%;
+    }
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    /* ===============
+    Maximal Width
+   =============== */
+    /*  for max width viewports, 
+    I want the logo first, 
+    then the H1, then both paras
+    then the TOC OL */
+    
+    aside > object {
+        order: 1;
+        max-width: none;
+    }
+    aside > object + h1 {
+        order: 2;
+    }
+    aside > h1 + p {
+        order: 3;
+    }
+    aside > p + ol {
+        order: 5;
+    }
+    aside > ol + p {
+        order: 4;
+    }
+    .wrapper {
+        width: 1026px;
+        /* 1140px - 10% for margins */
+        
+        margin: 0 auto;
+    }
+    header.wrapper {
+        width: 100%;
+    }
+    nav ul {
+        padding: 0 0 0 3rem;
+        margin: 0 0 0 3rem;
+    }
+    nav.wrapper {
+        margin: 0 5%;
+    }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
